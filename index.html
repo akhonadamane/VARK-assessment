@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VARK Learning Style Assessment by Akhona D</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>VARK Learning Style Assessment</h1>
+        <div id="intro-section">
+            <p>Welcome to the VARK Learning Style Assessment by Akhona Damane. Please enter your details to begin:</p>
+            <label for="name">First Name:</label>
+            <input type="text" id="name" placeholder="Enter your name" required><br>
+            <label for="age">Age:</label>
+            <input type="number" id="age" placeholder="Enter your age" required><br>
+            <button onclick="startQuiz()">Start Assessment</button>
+        </div>
+        
+        <div id="quiz-section" style="display: none;">
+            <form id="quiz-form">
+                <div id="questions-container"></div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+        <div id="result-section" style="display: none;">
+            <h2>Results</h2>
+            <p id="result-text"></p>
+            <h3>Suggested Learning Tips:</h3>
+            <ul id="learning-tips"></ul>
+            <button onclick="resetQuiz()">Take the Assessment Again</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
